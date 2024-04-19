@@ -21,6 +21,7 @@
   "author": "Luisjossam",
   "license": "MIT",
   "devDependencies": {
+    "@types/vue": "^2.0.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "ts-loader": "^9.5.1",
     "typescript": "^5.4.5",

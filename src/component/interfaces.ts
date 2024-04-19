@@ -8,5 +8,5 @@ export interface Props {
   dark?: boolean;
   noCloseButton?: boolean;
   closeAnywhere?: boolean;
-  loaderColor?: boolean;
+  loaderColor?: string;
 }

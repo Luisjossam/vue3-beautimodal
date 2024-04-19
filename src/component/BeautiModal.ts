@@ -1,4 +1,4 @@
-import { defineComponent, h, VNode, ref, watch } from "vue";
+import { defineComponent, h, VNode, ref, watch, onMounted } from "vue";
 import "./style.css";
 import { Props } from "./interfaces";
 
@@ -73,16 +73,20 @@ export default defineComponent({
       }
     );
     const loadingChanged = ref(false);
+    onMounted(() => {
+      const colorLoader = document.documentElement.style;
+      colorLoader.setProperty("--color-loader-beauti", props.loaderColor!);
+    });
     watch(
       () => props.loaderColor,
-      (newValue: string) => {
+      (newValue: string | undefined) => {
         const colorLoader = document.documentElement.style;
-        colorLoader.setProperty("--color-loader-beauti", newValue);
+        colorLoader.setProperty("--color-loader-beauti", newValue!);
       }
     );
     watch(
-      () => props.loading,
-      (newValue: boolean, oldValue: boolean) => {
+      () => props.loading!,
+      (newValue: Boolean, oldValue: Boolean) => {
         if (oldValue === true && newValue === false) {
           loadingChanged.value = true;
         }
