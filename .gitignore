@@ -1,0 +1,10 @@
+# Carpeta node_modules generada por npm/yarn
+node_modules/
+
+
+dist/
+
+# Archivos de respaldo y temporales
+*~
+*.swp
+.DS_Store

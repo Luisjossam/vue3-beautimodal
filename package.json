@@ -1,0 +1,35 @@
+{
+  "name": "vue3-beautimodal",
+  "version": "1.0.0",
+  "description": "A modal component for Vue 3",
+  "module": "./dist/vue3-beautimodal.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [
+    "modal",
+    "vue 3",
+    "component",
+    "dialog"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Luisjossam/vue3-beautimodal.git"
+  },
+  "author": "Luisjossam",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.9",
+    "vite-plugin-dts": "^3.8.3",
+    "vue": "^3.4.23"
+  },
+  "files": [
+    "/dist/*",
+    "/dist/components/*"
+  ]
+}
